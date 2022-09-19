@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Navbar from '../components/Navbar'
 
 
 export default function Home() {
@@ -10,10 +11,7 @@ export default function Home() {
         <meta name="Cool stuff Vidas made" />
         <link rel="canonical" href="https://bacevidas.com/" />
       </Head>
-
-        <h1>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <Navbar/>
     </div>
   )
 }
