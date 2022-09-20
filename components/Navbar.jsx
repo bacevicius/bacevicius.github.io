@@ -33,15 +33,15 @@ const Navbar = () => {
           : "fixed w-full h-20 z-[100]"
       }
     >
-      <div className="bg-gray-100 flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Link href="/">
+      <div className="bg-gray-100 flex flex-row-reverse justify-between items-center w-full h-full px-2 2xl:px-16">
+        {/* <Link href="/">
           <Image
             src="/../public/assets/vidas.png"
             alt="/"
             width="125"
             height="50"
           ></Image>
-        </Link>
+        </Link> */}
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
@@ -67,67 +67,81 @@ const Navbar = () => {
       {/* Use state here to show/hide the background */}
       <div
         className={
-          !nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
         }
       >
         <div
           className={
-            !nav
+            nav
               ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
           <div>
-            <div className="flex w-full items-center justify-between">
-              <Image
-                src="/../public/assets/vidas.png"
-                alt="/"
-                width="87"
-                height="35"
-              ></Image>
+            <div className="flex flex-row-reverse w-full items-center justify-between">
               <div
                 onClick={handleNav}
-                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
+                className="rounded-full shadow-lg shadow-gray-300 p-3 cursor-pointer"
               >
                 <AiOutlineClose />
               </div>
-            </div>
-            <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%] py-4">Navbar text!</p>
             </div>
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li className="py-4 text-sm">Home</li>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Home
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm">About</li>
-              </Link>{" "}
-              <Link href="/">
-                <li className="py-4 text-sm">Skills</li>
-              </Link>{" "}
-              <Link href="/">
-                <li className="py-4 text-sm">Projects</li>
+              <Link href="/#about">
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  About
+                </li>
+              </Link>
+              <Link href="/#skills">
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Skills
+                </li>
+              </Link>
+              <Link href="/#projects">
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Projects
+                </li>
               </Link>
             </ul>
             <div className="pt-40">
               <p className="uppercase tracking-widest text-[#5651e5]">
                 Let's Connect!
               </p>
-              <div className="flex items-center justify-between my-4 w-full sm:w=[80%]">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 curson-pointer hover:scale-105 ease-in duration-300">
-                  <FaLinkedinIn />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 curson-pointer hover:scale-105 ease-in duration-300">
-                  <FaGithub />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 curson-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineMail />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 curson-pointer hover:scale-105 ease-in duration-300">
-                  <BsFillPersonLinesFill />
-                </div>
+              <div className="flex items-center my-4 w-full sm:w=[80]">
+                <a
+                  href="https://www.linkedin.com/in/vidas-bacevi%C4%8Dius-335b3b194/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 mr-4 curson-pointer hover:scale-105 ease-in duration-300">
+                    <FaLinkedinIn />
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/bacevicius/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 mr-4 curson-pointer hover:scale-105 ease-in duration-300">
+                    <FaGithub />
+                  </div>
+                </a>
+                <a
+                  href="mailto:vidasbace@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="rounded-full shadow-lg shadow-gray-400 mr-4 p-3 curson-pointer hover:scale-105 ease-in duration-300">
+                    <AiOutlineMail />
+                  </div>
+                </a>
               </div>
             </div>
           </div>
