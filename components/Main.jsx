@@ -7,26 +7,30 @@ const Main = () => {
     <div id="main" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
-          <h1 className="py-7 text-black">Vidas Bacevičius </h1>
-          <p className="py-1 text-black max-w-[90%] m-auto">
+          <h1 className="py-7">Vidas Bacevičius </h1>
+          <p className="py-1  max-w-[90%] m-auto">
             Full Stack Developer at TU Delft X
           </p>
-          <p className="py-1 text-black max-w-[90%] m-auto">
+          <p className="py-1 max-w-[90%] m-auto">
             BSc Computer Science & Engineering at TU Delft
           </p>
-          <p className="pt-7 text-black max-w-[90%] m-auto">Resume:</p>
+          <p className="pt-7 max-w-[90%] m-auto">Resume:</p>
 
           <div className="flex items-center justify-around  max-w-[200px] m-auto">
-            <p className="mr-5 text-black">
+            <p className="mr-5">
               <a
-                className="hover:scale-110 ease-in duration-300"
+                className="hover:border-b-4 "
                 href="/../assets/CVstandard.pdf"
                 target="_blank"
               >
                 Standard
               </a>{" "}
               |{" "}
-              <a href="/../assets/CVpretty.pdf" target="_blank">
+              <a
+                className="hover:border-b-4 "
+                href="/../assets/CVpretty.pdf"
+                target="_blank"
+              >
                 Pretty
               </a>
             </p>
