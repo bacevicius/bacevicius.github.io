@@ -7,25 +7,38 @@ const Main = () => {
     <div id="main" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
-          <p className="uppercase text-sm tracking-widest text-gray-600">
-            Letsgoooo
+          <h1 className="py-7 text-black">Vidas Bacevičius </h1>
+          <p className="py-1 text-black max-w-[90%] m-auto">
+            Full Stack Developer at TU Delft X
           </p>
-          <h1 className="py-4 text-gray-700">
-            Heyo, I'm <span className="text-[#5651e5]"> Vidas! </span>
-          </h1>
-          <h1 className="py-2 text-gray-700">A developer</h1>
-          <p className="py-4 text-gray-600 max-w-[70%] m-auto">
-            I am a 4th year Computer Science student and a part-time Full Stack
-            Developer at TU Delft X, the Sports and Culture center of my alma
-            mater.
+          <p className="py-1 text-black max-w-[90%] m-auto">
+            BSc Computer Science & Engineering at TU Delft
           </p>
-          <div className="flex items-center justify-between max-w-[300px] m-auto py-4">
+          <p className="pt-7 text-black max-w-[90%] m-auto">Resume:</p>
+
+          <div className="flex items-center justify-around  max-w-[200px] m-auto">
+            <p className="mr-5 text-black">
+              <a
+                className="hover:scale-110 ease-in duration-300"
+                href="/../assets/CVstandard.pdf"
+                target="_blank"
+              >
+                Standard
+              </a>{" "}
+              |{" "}
+              <a href="/../assets/CVpretty.pdf" target="_blank">
+                Pretty
+              </a>
+            </p>
+          </div>
+
+          <div className="flex p-10 items-center justify-around max-w-[300px] m-auto py-7">
             <a
               href="https://www.linkedin.com/in/vidas-bacevi%C4%8Dius-335b3b194/"
               target="_blank"
               rel="noreferrer"
             >
-              <div className="p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+              <div className=" cursor-pointer hover:scale-110 ease-in duration-150">
                 <FaLinkedinIn size={40}></FaLinkedinIn>
               </div>
             </a>
@@ -34,7 +47,7 @@ const Main = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+              <div className=" cursor-pointer hover:scale-110 ease-in duration-150">
                 <FaGithub size={40}></FaGithub>
               </div>
             </a>
@@ -43,7 +56,7 @@ const Main = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+              <div className=" cursor-pointer hover:scale-110 ease-in duration-150">
                 <IoMail size={40}></IoMail>
               </div>
             </a>
