@@ -30,4 +30,8 @@ html {
   button {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-blue-300 to-blue-800 text-white
   }
+  
+  p {
+    @apply text-black
+  }
 }

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -32,27 +33,19 @@ const Navbar = () => {
       }
     >
       <div className="bg-gray-100 flex flex-row-reverse justify-between items-center w-full h-full px-2 2xl:px-16">
-        {/* <Link href="/">
-          <Image
-            src="/../public/assets/vidas.png"
-            alt="/"
-            width="125"
-            height="50"
-          ></Image>
-        </Link> */}
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
+              <li className="ml-10 text-lg uppercase hover:border-b">Home</li>
             </Link>
             <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:border-b">About</li>
+              <li className="ml-10 text-lg uppercase hover:border-b">About</li>
             </Link>
             <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
+              <li className="ml-10 text-lg uppercase hover:border-b">Skills</li>
             </Link>
             <Link href="/#projects">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+              <li className="ml-10 text-lg uppercase hover:border-b">
                 Projects
               </li>
             </Link>
@@ -88,38 +81,39 @@ const Navbar = () => {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li onClick={() => setNav(false)} className="py-4 text-xl">
                   Home
                 </li>
               </Link>
               <Link href="/#about">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li onClick={() => setNav(false)} className="py-4 text-xl">
                   About
                 </li>
               </Link>
               <Link href="/#skills">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li onClick={() => setNav(false)} className="py-4 text-xl">
                   Skills
                 </li>
               </Link>
               <Link href="/#projects">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li onClick={() => setNav(false)} className="py-4 text-xl">
                   Projects
                 </li>
               </Link>
             </ul>
             <div className="pt-40">
-              <p className="uppercase tracking-widest text-[#5651e5]">
+              <p className="uppercase tracking-widest text-[#5651e5] text-xl">
                 Let's Connect!
               </p>
+
               <div className="flex items-center my-4 w-full sm:w=[80]">
                 <a
                   href="https://www.linkedin.com/in/vidas-bacevi%C4%8Dius-335b3b194/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 mr-4 curson-pointer hover:scale-105 ease-in duration-300">
-                    <FaLinkedinIn />
+                  <div className="mr-4 cursor-pointer hover:scale-110 ease-in duration-150">
+                    <FaLinkedinIn size={40}></FaLinkedinIn>
                   </div>
                 </a>
                 <a
@@ -127,8 +121,8 @@ const Navbar = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 mr-4 curson-pointer hover:scale-105 ease-in duration-300">
-                    <FaGithub />
+                  <div className="mr-4 cursor-pointer hover:scale-110 ease-in duration-150">
+                    <FaGithub size={40}></FaGithub>
                   </div>
                 </a>
                 <a
@@ -136,10 +130,13 @@ const Navbar = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <div className="rounded-full shadow-lg shadow-gray-400 mr-4 p-3 curson-pointer hover:scale-105 ease-in duration-300">
-                    <AiOutlineMail />
+                  <div className="mr-4 cursor-pointer hover:scale-110 ease-in duration-150">
+                    <IoMail size={40}></IoMail>
                   </div>
                 </a>
+              </div>
+              <div className="pt-40">
+                <i className="text-italic text">Hey, I love your phone! :)</i>
               </div>
             </div>
           </div>
