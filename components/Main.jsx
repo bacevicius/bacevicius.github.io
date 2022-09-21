@@ -11,12 +11,12 @@ const Main = () => {
           <p className="py-1  max-w-[90%] m-auto">
             Full Stack Developer at TU Delft X
           </p>
-          <p className="py-1 max-w-[90%] m-auto">
+          <p className="pt-1 max-w-[90%] m-auto">
             BSc Computer Science & Engineering at TU Delft
           </p>
-          <p className="pt-7 max-w-[90%] m-auto">Resume:</p>
+          <p className="pt-8 max-w-[90%] m-auto">Resume:</p>
 
-          <div className="flex items-center justify-around  max-w-[200px] m-auto">
+          <div className="pt-1 flex items-center justify-around  max-w-[200px] m-auto">
             <p className="mr-5">
               <a
                 className="hover:border-b-4 "
@@ -36,7 +36,7 @@ const Main = () => {
             </p>
           </div>
 
-          <div className="flex p-10 items-center justify-around max-w-[300px] m-auto py-7">
+          <div className="flex p-10 items-center justify-around max-w-[300px] m-auto py-8">
             <a
               href="https://www.linkedin.com/in/vidas-bacevi%C4%8Dius-335b3b194/"
               target="_blank"
