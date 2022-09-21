@@ -1,7 +1,6 @@
 import React from "react";
-import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedin, FaLinkedinIn } from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Main = () => {
   return (
@@ -21,23 +20,38 @@ const Main = () => {
             mater.
           </p>
           <div className="flex items-center justify-between max-w-[300px] m-auto py-4">
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 curson-pointer hover:scale-110 ease-in duration-300">
-              <FaLinkedinIn></FaLinkedinIn>
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 curson-pointer hover:scale-110 ease-in duration-300">
-              <FaGithub></FaGithub>
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 curson-pointer hover:scale-110 ease-in duration-300">
-              <AiOutlineMail></AiOutlineMail>
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 curson-pointer hover:scale-110 ease-in duration-300">
-              <BsFillPersonLinesFill></BsFillPersonLinesFill>
-            </div>
+            <a
+              href="https://www.linkedin.com/in/vidas-bacevi%C4%8Dius-335b3b194/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <FaLinkedinIn size={40}></FaLinkedinIn>
+              </div>
+            </a>
+            <a
+              href="https://github.com/bacevicius/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <FaGithub size={40}></FaGithub>
+              </div>
+            </a>
+            <a
+              href="mailto:vidasbace@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <IoMail size={40}></IoMail>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Main;
