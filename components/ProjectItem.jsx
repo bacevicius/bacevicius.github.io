@@ -5,6 +5,7 @@ import ImageGallery from "react-image-gallery";
 import imagegallery from "react-image-gallery/styles/css/image-gallery.css";
 import {FaUserTie, FaUsers, FaCode, FaBolt } from "react-icons/fa";
 
+
 const ProjectItem = ({
   title,
   backgroundImg,
@@ -69,7 +70,7 @@ const ProjectItem = ({
             <div className="fixed inset-0 bg-black bg-opacity-25" />
           </Transition.Child>
           {/* overflow-y-auto to make it scrollable: */}
-          <div className="fixed inset-0">
+          <div className="fixed inset-0 overflow-y-auto">
             <div className="flex mt-12 max-h-[90%] items-center justify-center p-4 text-center">
               <Transition.Child
                 as={Fragment}
