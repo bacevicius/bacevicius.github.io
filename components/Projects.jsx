@@ -10,7 +10,7 @@ const Projects = () => {
           Projects
         </p>
         <h2 className="py-4">What I&apos;ve Built</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           <ProjectItem
             title="Live Gym Tracker"
             backgroundImg={Images.fitnessTrackerThumbnail}
