@@ -1,12 +1,10 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
-import propertyImg from '../public/assets/projects/property.jpg';
-import cryptoImg from '../public/assets/projects/crypto.jpg'
-import netflixImg from '../public/assets/projects/netflix.jpg'
-import twitchImg from '../public/assets/projects/twitch.jpg'
-import ProjectItem from './ProjectItem';
-import ProjectModal from './ProjectModal'
+import React from "react";
+import asteroidsThumbnail from "../public/assets/thumbnails/asteroids.jpg";
+import asteroids1 from "../public/assets/projects/asteroids/asteroids1.jpg";
+import asteroids2 from "../public/assets/projects/asteroids/asteroids2.jpg";
+import asteroids3 from "../public/assets/projects/asteroids/asteroids3.jpg";
+import asteroids4 from "../public/assets/projects/asteroids/asteroids4.jpg";
+import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
   return (
@@ -18,43 +16,16 @@ const Projects = () => {
         <h2 className="py-4">What I&apos;ve Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
-            title="Property Finder"
-            backgroundImg={propertyImg}
-            projectUrl="/property"
-            tech="React JS"
-          />
-          <ProjectItem
-            title="Crypto App"
-            backgroundImg={cryptoImg}
-            projectUrl="/crypto"
-            tech="React JS"
-          />
-          <ProjectItem
-            title="Netflix App"
-            backgroundImg={netflixImg}
-            projectUrl="/netflix"
-            tech="React JS"
-          />
-          <ProjectItem
-            title="Twitch UI"
-            backgroundImg={twitchImg}
-            projectUrl="/twitch"
-            tech="Next JS"
+            title="Asteroids Game"
+            backgroundImg={asteroidsThumbnail}
+            type="Java Application"
+            tech="Java, LibGDX, SQL, Gitlab CI/CD"
+            role="Developer"
+            team="5 people (SCRUM)"
+            description="We developed a version of the old-school Asteroids game with special attention to using correct software engineering methods and design patterns. We performed Requirements Analysis, created use case models, UML and Sequence Diagrams, analysed class couplng, cohesion and complexity. Used design patterns include State, Template Method. This project was created while following SCRUM methodology."
+            galleryImages={[asteroids1, asteroids2, asteroids3, asteroids4]}
           />
 
-          {/* <ProjectModal
-            className="project"
-            buttonLabel={"hi"}
-            descriptionText={"hi"}
-            projectTitle={"hi"}
-            type={"hi"}
-            imageName={"hi"}
-            technology={"hi"}
-            role={"hi"}
-            team={"hi"}
-            thumbnail={"hi"}
-            galleryImages={"hi"}
-          ></ProjectModal> */}
         </div>
       </div>
     </div>

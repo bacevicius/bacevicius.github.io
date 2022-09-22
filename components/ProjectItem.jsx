@@ -1,9 +1,20 @@
 import { Dialog, Transition } from "@headlessui/react";
 import Image from "next/image";
-import Link from "next/link";
 import { Fragment, useState } from "react";
+import ImageGallery from "react-image-gallery";
+import imagegallery from "react-image-gallery/styles/css/image-gallery.css";
+import {FaUserTie, FaUsers, FaCode, FaBolt } from "react-icons/fa";
 
-const ProjectItem = ({ title, backgroundImg, tech, projectUrl }) => {
+const ProjectItem = ({
+  title,
+  backgroundImg,
+  tech,
+  description,
+  role,
+  team,
+  type,
+  galleryImages,
+}) => {
   let [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
@@ -13,6 +24,13 @@ const ProjectItem = ({ title, backgroundImg, tech, projectUrl }) => {
   function openModal() {
     setIsOpen(true);
   }
+
+  // Convert imported images to a format that react-image-gallery accepts
+  galleryImages = galleryImages.map((image) => {
+    const container = {};
+    container["original"] = image.src;
+    return container;
+  });
 
   return (
     <>
@@ -28,11 +46,11 @@ const ProjectItem = ({ title, backgroundImg, tech, projectUrl }) => {
           </h3>
           <p className="pb-4 pt-2 text-white text-center">{tech}</p>
           <div className="flex justify-center">
-          <button onClick={openModal} >
-            <p className="text-center py-3 px-7 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
-              More Info
-            </p>
-          </button>
+            <button onClick={openModal}>
+              <p className="text-center py-3 px-7 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
+                More Info
+              </p>
+            </button>
           </div>
         </div>
       </div>
@@ -50,9 +68,9 @@ const ProjectItem = ({ title, backgroundImg, tech, projectUrl }) => {
           >
             <div className="fixed inset-0 bg-black bg-opacity-25" />
           </Transition.Child>
-
-          <div className="fixed inset-0 overflow-y-auto">
-            <div className="flex min-h-full items-center justify-center p-4 text-center">
+          {/* overflow-y-auto to make it scrollable: */}
+          <div className="fixed inset-0">
+            <div className="flex mt-12 max-h-[90%] items-center justify-center p-4 text-center">
               <Transition.Child
                 as={Fragment}
                 enter="ease-out duration-300"
@@ -62,18 +80,62 @@ const ProjectItem = ({ title, backgroundImg, tech, projectUrl }) => {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="w-full max-w-2xl transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
-                    className="text-lg font-medium leading-6 text-gray-900"
+                    className="text-xl font-medium leading-6 text-gray-900 border-b border-gray-300 mb-2 pb-4"
                   >
-                    Payment successful
+                    {title}
                   </Dialog.Title>
+
+                  <div className="flex flex-row justify-around items-center text-center">
+                    <div className="flex flex-col ">
+                      <div className="flex justify-center">
+                        <FaBolt size={25} />
+                        <p className="mx-3 font-medium">Type</p>
+                        <FaBolt size={25} />
+                      </div>
+                      <div className="mt-1"> {type} </div>
+
+                      <div className="flex justify-center mt-5">
+                        <FaCode size={25} />
+                        <p className="mx-3 font-medium">Tech</p>
+                        <FaCode size={25} />
+                      </div>
+                      <div className="mt-1">{tech} </div>
+                    </div>
+
+                    <div className="flex flex-col m-4">
+                      <div className="flex justify-center">
+                        <FaUserTie size={25} />
+                        <p className="mx-3 font-medium">Role</p>
+                        <FaUserTie size={25} />
+                      </div>
+                      <div className="mt-1">{role} </div>
+
+                      <div className="flex justify-center mt-5">
+                        <FaUsers size={25} />
+                        <p className="mx-3 font-medium">Team</p>
+                        <FaUsers size={25} />
+                      </div>
+                      <div className="mt-1">{team} </div>
+                    </div>
+                  </div>
                   <div className="mt-2">
-                    <p className="text-sm text-gray-500">
-                      Your payment has been successfully submitted. We’ve sent
-                      you an email with all of the details of your order.
-                    </p>
+                    <p className="text-sm text-gray-500">{description}</p>
+                  </div>
+
+                  <div className="flex justify-center">
+                    <div className="mt-4">
+                      <ImageGallery
+                        items={galleryImages}
+                        showFullscreenButton={false}
+                        showPlayButton={false}
+                        showBullets={true}
+                        showThumbnails={false}
+                        lazyLoad={true}
+                      ></ImageGallery>
+                    </div>
                   </div>
 
                   <div className="mt-4">
