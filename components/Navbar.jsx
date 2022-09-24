@@ -27,9 +27,7 @@ const Navbar = () => {
     // Navbar shadow
     <div
       className={
-        shadow
-          ? "fixed w-full h-20 shadow-xl z-[9]"
-          : "fixed w-full h-20 z-[9]"
+        shadow ? "fixed w-full h-20 shadow-xl z-[9]" : "fixed w-full h-20 z-[9]"
       }
     >
       <div className="bg-gray-100 flex flex-row-reverse justify-between items-center w-full h-full px-2 2xl:px-16">
@@ -103,7 +101,7 @@ const Navbar = () => {
             </ul>
             <div className="pt-40">
               <p className="uppercase tracking-widest text-[#5651e5] text-xl">
-                Let's Connect!
+                Let&apos;s Connect!
               </p>
 
               <div className="flex items-center my-4 w-full sm:w=[80]">
