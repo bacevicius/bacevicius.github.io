@@ -5,7 +5,7 @@ import asteroids3 from "../public/assets/projects/asteroids/asteroids3.jpg";
 import asteroids4 from "../public/assets/projects/asteroids/asteroids4.jpg";
 import covidAppThumbnail from "../public/assets/thumbnails/covidApp.jpg";
 import covidApp1 from "../public/assets/projects/covidApp/covidApp1.jpg";
-import covidApp2 from "../public/assets/projects/covidApp/covidApp1.jpg";
+import covidApp2 from "../public/assets/projects/covidApp/covidApp2.jpg";
 import fitnessTrackerThumbnail from "../public/assets/thumbnails/fitnessTracker.jpg";
 import fitnessTracker1 from "../public/assets/projects/fitnessTracker/fitnessTracker1.jpg";
 import fitnessTracker2 from "../public/assets/projects/fitnessTracker/fitnessTracker2.jpg";
@@ -13,10 +13,9 @@ import fitnessTracker3 from "../public/assets/projects/fitnessTracker/fitnessTra
 import fitnessTracker4 from "../public/assets/projects/fitnessTracker/fitnessTracker4.jpg";
 import goGreenThumbnail from "../public/assets/thumbnails/goGreen.jpg";
 import goGreen1 from "../public/assets/projects/goGreen/goGreen1.jpg";
-import goGreen2 from "../public/assets/projects/goGreen/goGreen1.jpg";
-import goGreen3 from "../public/assets/projects/goGreen/goGreen1.jpg";
-import goGreen4 from "../public/assets/projects/goGreen/goGreen1.jpg";
-import goGreen5 from "../public/assets/projects/goGreen/goGreen1.jpg";
+import goGreen2 from "../public/assets/projects/goGreen/goGreen2.jpg";
+import goGreen3 from "../public/assets/projects/goGreen/goGreen3.jpg";
+import goGreen4 from "../public/assets/projects/goGreen/goGreen4.jpg";
 import mlAnalysisThumbnail from "../public/assets/thumbnails/mlAnalysis.jpg";
 import mlAnalysis1 from "../public/assets/projects/mlAnalysis/mlAnalysis1.jpg";
 import mlAnalysis2 from "../public/assets/projects/mlAnalysis/mlAnalysis2.jpg";
@@ -56,7 +55,6 @@ const Images = {
   goGreen2: goGreen2,
   goGreen3: goGreen3,
   goGreen4: goGreen4,
-  goGreen5: goGreen5,
   mlAnalysisThumbnail: mlAnalysisThumbnail,
   mlAnalysis1: mlAnalysis1,
   mlAnalysis2: mlAnalysis2,
