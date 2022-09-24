@@ -34,7 +34,7 @@ const ProjectItem = ({
 
   return (
     <>
-      <div className="relative flex items-center justify-center md:h-72 h-96 w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]">
+      <div className="relative flex items-center justify-center lg:h-72 h-96 w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]">
         <Image
           className="rounded-xl group-hover:opacity-10"
           src={backgroundImg}
@@ -43,16 +43,16 @@ const ProjectItem = ({
           objectFit="cover"
         />
 
-        <div className="group-hover:hidden w-full absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ">
-          <h3 className="text-2xl text-white tracking-wider text-center">
+        <div className="group-hover:hidden w-[90%] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ">
+          <h5 className="lg:text-3xl text-4xl text-white tracking-wider text-center font-black">
             {title}
-          </h3>
+          </h5>
         </div>
 
         <div className="hidden group-hover:block w-[80%] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ">
-          <h3 className="text-2xl text-white tracking-wider text-center">
+          <h4 className="text-2xl text-white tracking-wider text-center">
             {title}
-          </h3>
+          </h4>
           <p className="pb-4 pt-2 text-white text-center">{tech}</p>
           <div className="flex justify-center">
             <button onClick={openModal}>

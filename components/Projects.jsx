@@ -9,8 +9,8 @@ const Projects = () => {
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Projects
         </p>
-        <h2 className="py-4">What I&apos;ve Built</h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <h2 className="py-5 mb-2">What I&apos;ve Built</h2>
+        <div className="grid lg:grid-cols-3 gap-8">
           <ProjectItem
             title="Live Gym Tracker"
             backgroundImg={Images.fitnessTrackerThumbnail}
@@ -39,7 +39,6 @@ const Projects = () => {
               Images.goGreen2,
               Images.goGreen3,
               Images.goGreen4,
-              Images.goGreen5,
             ]}
           />
           <ProjectItem
@@ -68,7 +67,7 @@ const Projects = () => {
             ]}
           />
           <ProjectItem
-            title="Netflix Recommendation System"
+            title="Netflix Recommender System"
             backgroundImg={Images.netflixPrizeThumbnail}
             type="Python Implementation/Analysis"
             tech="Python, Numpy, Pandas"
