@@ -3,8 +3,7 @@ import Image from "next/image";
 import { Fragment, useState } from "react";
 import ImageGallery from "react-image-gallery";
 import imagegallery from "react-image-gallery/styles/css/image-gallery.css";
-import {FaUserTie, FaUsers, FaCode, FaBolt } from "react-icons/fa";
-
+import { FaUserTie, FaUsers, FaCode, FaBolt } from "react-icons/fa";
 
 const ProjectItem = ({
   title,
@@ -35,13 +34,22 @@ const ProjectItem = ({
 
   return (
     <>
-      <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]">
+      <div className="relative flex items-center justify-center md:h-72 h-96 w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]">
         <Image
           className="rounded-xl group-hover:opacity-10"
           src={backgroundImg}
           alt="/"
+          layout="fill"
+          objectFit="cover"
         />
-        <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ">
+
+        <div className="group-hover:hidden w-full absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ">
+          <h3 className="text-2xl text-white tracking-wider text-center">
+            {title}
+          </h3>
+        </div>
+
+        <div className="hidden group-hover:block w-[80%] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ">
           <h3 className="text-2xl text-white tracking-wider text-center">
             {title}
           </h3>
