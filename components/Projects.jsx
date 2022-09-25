@@ -27,6 +27,20 @@ const Projects = () => {
             ]}
           />
           <ProjectItem
+            title="Bilter Fubble"
+            backgroundImg={Images.bilterFubbleThumbnail}
+            type="Java Application"
+            tech="Java, Spring, Maven, JUnit, Mockito, Heroku"
+            role="Developer"
+            team="7 people (SCRUM)"
+            description="Our SCRUM team created and deployed a full-fledged Java application designed to track and improve users' environmentally-friendly habits. The process of improving habits was gameified and users were rewarded points and achievements based on their environmentally-friendly actions. Made in Java over the course of two months while following the SCRUM framework"
+            galleryImages={[
+              Images.bilterFubble1,
+              Images.bilterFubble2,
+              Images.bilterFubble3,
+            ]}
+          />
+          <ProjectItem
             title="Go Green (Clima mutatio dolus)"
             backgroundImg={Images.goGreenThumbnail}
             type="Java Application"

@@ -35,6 +35,10 @@ import raytracer2 from "../public/assets/projects/raytracer/raytracer2.jpg";
 import raytracer3 from "../public/assets/projects/raytracer/raytracer3.jpg";
 import raytracer4 from "../public/assets/projects/raytracer/raytracer4.jpg";
 import raytracer5 from "../public/assets/projects/raytracer/raytracer5.jpg";
+import bilterFubbleThumbnail from "../public/assets/thumbnails/bilterFubble.jpg";
+import bilterFubble1 from "../public/assets/projects/bilterFubble/bilterFubble1.jpg";
+import bilterFubble2 from "../public/assets/projects/bilterFubble/bilterFubble2.jpg";
+import bilterFubble3 from "../public/assets/projects/bilterFubble/bilterFubble3.jpg";
 
 const Images = {
   asteroidsThumbnail: asteroidsThumbnail,
@@ -74,6 +78,10 @@ const Images = {
   raytracer3: raytracer3,
   raytracer4: raytracer4,
   raytracer5: raytracer5,
+  bilterFubbleThumbnail: bilterFubbleThumbnail,
+  bilterFubble1: bilterFubble1,
+  bilterFubble2: bilterFubble2,
+  bilterFubble3: bilterFubble3,
 };
 
 export default Images;
