@@ -20,20 +20,20 @@ const Projects = () => {
             team="Me"
             description="I offered to create a Live Gym Tracker for my university gym. It allows users to see live data about current number of people in the gym as well as previous trends, letting them choose their preferred time of working out. When the gym is open, the Gym Tracker resides in the main page of TU Delft X. It responsive and is offered both in English and Dutch."
             galleryImages={[
-              Images.fitnessTracker1,
-              Images.fitnessTracker2,
               Images.fitnessTracker3,
+              Images.fitnessTracker2,
+              Images.fitnessTracker1,
               Images.fitnessTracker4,
             ]}
           />
           <ProjectItem
             title="Bilter Fubble"
             backgroundImg={Images.bilterFubbleThumbnail}
-            type="Java Application"
-            tech="Java, Spring, Maven, JUnit, Mockito, Heroku"
-            role="Developer"
-            team="7 people (SCRUM)"
-            description="Our SCRUM team created and deployed a full-fledged Java application designed to track and improve users' environmentally-friendly habits. The process of improving habits was gameified and users were rewarded points and achievements based on their environmentally-friendly actions. Made in Java over the course of two months while following the SCRUM framework"
+            type="Web Application (Game)"
+            tech="Javascript, Express.js, Phaser 3, SQLite"
+            role="Team Lead, Backend Developer"
+            team="5 people (SCRUM)"
+            description="Our team of four project members and myself created and deployed a music exploration game designed to encourage users to explore music beyond their preferred tastes. The process of discovering new music genres was gameified and users were rewarded points and achievements based on the variety of genres they explored. Made in Javascript over the course of two months while following the SCRUM framework."
             galleryImages={[
               Images.bilterFubble1,
               Images.bilterFubble2,
@@ -76,7 +76,6 @@ const Projects = () => {
             galleryImages={[
               Images.asteroids1,
               Images.asteroids2,
-              Images.asteroids3,
               Images.asteroids4,
             ]}
           />

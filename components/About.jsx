@@ -24,7 +24,7 @@ const About = () => {
 
           <p className="py-2 text-gray-600">
             I am currently interested in the fields of Cloud Computing, DevOps
-            and SRE.
+            and Site Reliability Engineering.
           </p>
 
           {/* <Link href="/#projects">
