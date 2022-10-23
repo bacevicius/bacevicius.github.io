@@ -137,14 +137,15 @@ const ProjectItem = ({
                   </div>
 
                   <div className="flex justify-center">
-                    <div className="mt-4">
+                    <div className="mt-4 hidden sm:flex">
+                    {/* <div className="mt-4"> */}
                       <ImageGallery
                         items={galleryImages}
                         showFullscreenButton={false}
                         showPlayButton={false}
                         showBullets={true}
                         showThumbnails={false}
-                        lazyLoad={true}
+                        lazyLoad={false}
                       ></ImageGallery>
                     </div>
                   </div>
