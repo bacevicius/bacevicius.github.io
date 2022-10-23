@@ -39,6 +39,9 @@ import bilterFubbleThumbnail from "../public/assets/thumbnails/bilterFubble.jpg"
 import bilterFubble1 from "../public/assets/projects/bilterFubble/bilterFubble1.jpg";
 import bilterFubble2 from "../public/assets/projects/bilterFubble/bilterFubble2.jpg";
 import bilterFubble3 from "../public/assets/projects/bilterFubble/bilterFubble3.jpg";
+import researchProjectThumbnail from "../public/assets/thumbnails/researchProject.jpg";
+import researchProject1 from "../public/assets/projects/researchProject/researchProject1.jpg";
+import researchProject2 from "../public/assets/projects/researchProject/researchProject2.jpg";
 
 const Images = {
   asteroidsThumbnail: asteroidsThumbnail,
@@ -82,6 +85,9 @@ const Images = {
   bilterFubble1: bilterFubble1,
   bilterFubble2: bilterFubble2,
   bilterFubble3: bilterFubble3,
+  researchProjectThumbnail: researchProjectThumbnail,
+  researchProject1: researchProject1,
+  researchProject2: researchProject2
 };
 
 export default Images;

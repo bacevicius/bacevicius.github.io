@@ -41,6 +41,19 @@ const Projects = () => {
             ]}
           />
           <ProjectItem
+            title="Research Reproducibility Suite"
+            backgroundImg={Images.researchProjectThumbnail}
+            type="Architecture"
+            tech="Docker, Docker Compose, Python, Bash, Git"
+            role="Developer"
+            team="3 people"
+            description="After finishing my Bachelor's graduation paper on code2seq, I decided to work on the paper more to attempt to publish it. For this reason I created an architecture that allowed to, in a Docker container, run 5 different experiments on 3 different datasets each. Running an experiment meant downloading training data, preprocessing this data according to each experiment, training code2seq on this data and displaying the prediction results."
+            galleryImages={[
+              Images.researchProject1,
+              Images.researchProject2,
+            ]}
+          />
+          <ProjectItem
             title="Go Green (Clima mutatio dolus)"
             backgroundImg={Images.goGreenThumbnail}
             type="Java Application"
