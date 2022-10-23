@@ -11,15 +11,15 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Vidas Bacevičius</title>
+        <title>Vidas Bacevičius Portfolio</title>
         <meta name="Cool stuff Vidas made" />
-        <link rel="canonical" href="https://bacevidas.com/" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
       </Head>
-      <Navbar/>
+      <Navbar />
       <Main />
       <About />
       <Skills />
       <Projects />
     </div>
-  )
+  );
 }
