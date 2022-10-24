@@ -19,6 +19,11 @@ h5{
     height: 45vh;
 }
 
+button.image-gallery-left-nav:focus, button.image-gallery-right-nav:focus {
+    outline: none;
+    background-color: transparent;
+}
+
 @layer base {
   body {
     @apply bg-gray-100 text-[#1f2937] tracking-wide;
