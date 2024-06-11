@@ -9,7 +9,7 @@ const Main = () => {
         <div>
           <h1 className="py-7">Vidas Bacevičius </h1>
           <p className="py-1  max-w-[90%] m-auto">
-            Full Stack Developer at TU Delft X
+            System Administrator at Oxylabs
           </p>
           <p className="pt-1 max-w-[90%] m-auto">
             BSc Computer Science & Engineering at TU Delft

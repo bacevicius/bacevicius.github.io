@@ -13,7 +13,8 @@ const About = () => {
           <h2 className="py-4">Who I am</h2>
           <p className="py-2 text-gray-600">
             I am a graduate of Bachelors of Science in Computer Science and
-            Engineering from TU Delft and a Full Stack Developer at TU Delft X -
+            Engineering from TU Delft and, currently, System Administrator at Oxylabs.
+            Previously I was a Lead Full Stack Developer at TU Delft X -
             the Sports and Culture center of my alma mater.
           </p>
           <p className="py-2 text-gray-600">
