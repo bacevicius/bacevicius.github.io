@@ -19,7 +19,7 @@ const Main = () => {
           <div className="pt-1 flex items-center justify-around  max-w-[200px] m-auto">
             <p className="mr-5">
               <a
-                className="hover:border-b-4"
+                className="hover:border-b-4 textLink"
                 href="/../assets/CVstandard.pdf"
                 target="_blank"
               >
@@ -27,7 +27,7 @@ const Main = () => {
               </a>{" "}
               |{" "}
               <a
-                className="hover:border-b-4 "
+                className="hover:border-b-4 textLink"
                 href="/../assets/CVpretty.pdf"
                 target="_blank"
               >

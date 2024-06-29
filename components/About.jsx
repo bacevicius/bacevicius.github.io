@@ -18,7 +18,7 @@ const About = () => {
             the Sports and Culture center of my alma mater.
           </p>
           <p className="py-2 text-gray-600">
-            As a software engineer, I strive to be open and communicative. I
+            I am open and communicative. I
             enjoy learning new technologies and do not hesitate to ask for help
             if I encounter a problem beyond my scope of expertise.
           </p>
@@ -40,8 +40,8 @@ const About = () => {
             className="rounded-xl"
             src="/../assets/face.png"
             alt="/"
-            height="616px"
-            width="561px"
+            height="616"
+            width="561"
           ></Image>
         </div>
       </div>
